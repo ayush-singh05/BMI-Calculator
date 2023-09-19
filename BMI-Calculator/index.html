@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        background-color: #02020F;
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+    }
+    .bmi-index-calculator{
+        text-align: center;
+        border: 1px solid white;
+        padding: 10px;
+        
+        min-height: 40vh;
+        /* width: 25vw; */
+    }
+    .heigth-bmi,.width-bmi{
+        /* padding: 4px; */
+     
+        margin-bottom: 10px;
+       
+    }
+    button{
+        padding: 8px;
+      
+        margin-top: 20px;
+      
+        border-radius: 8px;
+        background-color: rgba(12, 207, 51, 0.945);
+        color: #FFFF;
+        cursor: pointer;
+    }
+    input{
+        width: 70%;
+        padding: 5px;
+        outline: none;
+        border-radius: 5px;
+        
+    }
+    .range{
+        text-align: left;
+      
+        /* width: 80%; */
+    }
+    .result{
+        padding: 10px;
+        font-size: 1.5rem;
+        font-weight: 800;
+    }
+</style>
+
+<body>
+    <div class="bmi-index-calculator">
+        <h2>BMI Caculator</h2>
+        <form action="">
+            <div class="bmi">
+                <div>
+                    <div class="heigth-bmi">
+                        <label for="height">Height:</label>
+                        <input id="height" type="number" name="height" placeholder="Height In CM">
+    
+                    </div>
+                    <div class="width-bmi">
+                        <label for="wdth">Width: </label>
+                        <input id="weight" type="number" name="wdth" placeholder="Weight In KG">
+                    </div>
+                    <div id="result">
+
+                    </div>
+                    <div class="range">
+                        <p> <b>Underweight:</b> BMI below 18.5</p>
+                        <p><b>Healthy weight:</b> BMI of 18.5 to 24.9</p>
+                        <p><b>Overweight:</b> BMI of 25.0 to 29.9</p>
+                        <p><b>Obesity:</b> BMI of 30.0 or higher</p>
+                    </div>
+                </div>
+                <button type="submit">Calculate BMI</button>
+            </div>
+        </form>
+        
+       <script src="./script.js"></script>
+</body>
+</html>
